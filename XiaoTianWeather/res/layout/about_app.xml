@@ -1,0 +1,116 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:text=" 返回"
+        android:textSize="18dp"
+        android:textColor="#555" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="4dp"
+        android:text="@string/app_name"
+        android:textSize="20dp"
+        android:textColor="#555" />
+    
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/white_space"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:text="\n"
+        android:textSize="2dp"/>"
+    <View  
+        android:layout_height="2px" 
+        android:background="#a44" 
+        android:layout_width="fill_parent"
+        android:layout_below="@id/white_space">
+    </View>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@id/title"
+        android:textColor="#666"
+        android:textSize="22dp"
+        android:text="小天天气，感谢您的支持！" />
+    
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:text="    数据来源"
+        android:textColor="#333"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/tv22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_below="@id/tv2"
+        android:text="    PM25.in\n    百度API"
+        android:textColor="#666"
+        android:textSize="18dp"/>
+    
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_below="@+id/tv22"
+        android:text="\n    核心团队"
+        android:textColor="#333"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/tv33"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_below="@id/tv3"
+        android:text="    助教：黄军\n    用户代表：闵小旭\n    开发人员：\n      陈冲\n      赖涵光\n      蔡文静\n      谢云飞\n      吴孟轩"
+        android:textColor="#666"
+        android:textSize="18dp"/>
+    
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_below="@+id/tv33"
+        android:text="\n    鸣谢"
+        android:textColor="#333"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/tv44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:layout_below="@+id/tv4"
+        android:text="    百度api 观哦天气app "
+        android:textColor="#666"
+        android:textSize="18dp"/>"
+       "
+        
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >   
+    <RelativeLayout 
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:text=" 返回"
+        android:textSize="18dp"
+        android:textColor="#555" />
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="4dp"
+        android:text="@string/app_name"
+        android:textSize="20dp"
+        android:textColor="#555" />
+    
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/white_space"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@id/title"
+        android:text="\n"
+        android:textSize="2dp"/>
+    <View  
+        android:layout_height="2px" 
+        android:background="#a44" 
+        android:layout_width="fill_parent"
+        android:layout_below="@id/white_space">
+    </View>
+</RelativeLayout>

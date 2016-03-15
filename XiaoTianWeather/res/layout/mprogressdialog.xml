@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:layout_gravity="center" >
+
+    <ImageView
+        android:id="@+id/mdialogview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@anim/progressdialog"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/mdialogtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/loading"
+        android:layout_below="@id/mdialogview"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

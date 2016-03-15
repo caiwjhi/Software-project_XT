@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/homep_title"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:text="0.0"
+        android:textColor="#444"
+        android:textSize="48sp" />
+
+        <TextView
+            android:id="@+id/currentcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/temp"
+            android:layout_alignParentRight="true"
+            android:focusable="true"
+            android:textColor="#444"
+            android:textSize="24sp" />
+        
+            <TextView
+                android:id="@+id/pm25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/currentcity"
+                android:layout_alignParentRight="true"
+                android:gravity="center|top"
+                android:textColor="#444"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/pollution_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/pm25"
+                android:textColor="#444"
+                android:textSize="18sp" />
+    
+    <TextView
+        android:id="@+id/today_date_dec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/pollution_level"
+		android:layout_marginTop="5dp"
+		android:textColor="#444"
+		android:textSize="16sp"
+		android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/search_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_below="@id/today_date_dec"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/inputcity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:hint="@string/pleaseinput" />
+
+        <Button
+            android:id="@+id/sendcity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/homep_search_bg"
+            android:gravity="center"
+            android:text="@string/search" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/tomorrow_weather"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/search_hint"
+        android:cacheColorHint="@android:color/transparent" />
+    
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+package com.example.xiaotianweather;
+
+import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+
+public class WeatherPicTime {
+	public static Bitmap getPic(Context c, int index, int type){
+		Bitmap bmp = null;
+		switch(index){
+		case 0:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_sunny);
+			break;
+		case 1:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_cloudy);
+			break;
+		case 2:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_overcast);
+			break;
+		case 3:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_showers);
+			break;
+		case 4:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_cloudy);
+			break;
+		case 5:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_thunderstorm);
+			break;
+		case 6:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_snow_rain);
+			break;
+		case 7:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_cloudy);
+			break;
+		case 8:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_thunderstorm);
+			break;
+		case 9:
+		case 10:
+		case 11:
+		case 12:
+		case 13:
+			if(type == 0){
+				bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_chance_of_snow);
+			}else{
+				bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_chance_of_snow_n);
+			}
+			break;
+		case 14:
+		case 15:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_snow);
+			break;
+		case 16:
+		case 17:
+		case 18:
+		case 19:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_icy);
+			break;
+		case 20:
+		case 21:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_rain);
+			break;
+		case 22:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_heavy_rain);
+			break;
+		case 23:
+		case 24:
+		case 25:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_storm);
+			break;
+		case 26:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_light_snow);
+			break;
+		case 27:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_heavy_snow);
+			break;
+		case 28:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_storm_snow);
+			break;
+		case 29:
+		case 30:
+		case 31:
+			if(type == 0){
+				bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_dust);
+			}else{
+				bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_dust_n);
+			}
+			break;
+		case 32:
+			if(type == 0){
+				bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_fog);
+			}else{
+				bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_fog_n);
+			}
+			break;
+		default:
+			bmp = BitmapFactory.decodeResource(c.getResources(), R.drawable.wip_sleet);
+			break;
+		}
+		return bmp;
+	}
+	public static Bitmap getSmallPic(Context c, int index, int type){
+		int picSize = 60;
+		return Bitmap.createScaledBitmap(getPic(c, index, type), picSize, picSize, true);
+		
+	}
+}
